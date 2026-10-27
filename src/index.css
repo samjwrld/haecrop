@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #15803d;
+    --primary-dark: #166534;
+    --primary-light: #f0fdf4;
+    --primary-foreground: #ffffff;
+    
+    --secondary: #d97706;
+    --secondary-hover: #b45309;
+    --secondary-foreground: #ffffff;
+    
+    --accent: #16a34a;
+    --accent-gold: #eab308;
+    
+    --background: #ffffff;
+    --foreground: #111827;
+    
+    --card: #ffffff;
+    --card-foreground: #111827;
+    
+    --muted: #f8fafc;
+    --muted-foreground: #475569;
+    
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #15803d;
+    
+    --radius: 0.75rem;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--foreground);
+    background-color: var(--background);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Gradients and Utilities matching HYCROP visual system */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #14532d 0%, #15803d 50%, #16a34a 100%);
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(20, 83, 45, 0.85) 100%);
+}
+
+.bg-gradient-gold {
+  background: linear-gradient(135deg, #d97706 0%, #eab308 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #15803d 0%, #16a34a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animation Utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Smooth Image Hover Effect */
+.image-zoom-container {
+  overflow: hidden;
+}
+
+.image-zoom-container img {
+  transition: transform 0.5s ease;
+}
+
+.image-zoom-container:hover img {
+  transform: scale(1.06);
+}
+

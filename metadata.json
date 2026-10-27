@@ -1,0 +1,6 @@
+{
+  "name": "HYCROP Agri Solutions",
+  "description": "Cultivating Trust, Harvesting Success. Premium agricultural fertilizers, crop protection, and sustainable farming solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
